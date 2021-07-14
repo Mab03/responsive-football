@@ -1,0 +1,155 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-banner{
+    display: flex;
+    width: 1440px;
+    height: 677px;
+    background-color: #2d25a0;
+}
+.half-width img{
+    transition: transform .2s ease-out;
+}
+.top-banner:hover .half-width img{
+    transform: rotate(10deg);
+}
+.half-width{
+    width: 50%;
+}
+.heading{
+    font-size: 4em;
+    margin-left: 100px;
+    margin-top: 150px;
+    color: #ffffff;
+}
+.button{
+    padding: 20px 20px 20px 20px;
+    font-size: 1.5em;
+    background-color: #e02c6d;
+    color: white;
+}
+.button-1{
+    margin-left: 100px;
+    margin-top: 0px;
+}
+.fas{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.button-2{
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-left: 450px;
+}
+.half-width img{
+    width: 556px;
+    height: 438px;
+    margin-top: 75px;
+}
+
+/* Player section */
+.section-players{
+    justify-content: center;
+}
+.players{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.player{
+    height: 475px;
+    width: 330px;
+    border: 20px solid white;
+    box-shadow: 10px 10px 10px 10px rgba(70, 131, 180, 0.226);
+}
+.players img{
+    width: 310px;
+    height: 310px;
+}
+.player-name{
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.player-desc{
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Feature */
+.feature{
+    margin-top: 150px;
+    display: flex;
+}
+.news{
+    height: 309px;
+    width: 466px;
+    margin-right: 35px;
+}
+.feature img{
+    height: 427px;
+    width: 567px;
+}
+.news-head{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.p-news{
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* Bottom Section */
+.bottom{
+    margin-top: 150px;
+    width: 450px;
+    height: 225px;
+}
+.bottom img{
+    height: 100px;
+    width: 450px;
+}
+.social{
+    font-size: 2em;
+    margin-left: 165px;
+}
+.fab{
+    margin-right: 12px;
+       
+}
+.copyright{
+    font-size: 1em;
+    margin-left: 150px;
+}
+
+/* Media Queries */
+
+/* Mobile devices */
+@media only screen and (max-width:688px){
+    .players{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+/* Tablet devices */
+@media only screen and (min-width:668px) and (max-width:992px){
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
