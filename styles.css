@@ -142,11 +142,17 @@ main{
     .players{
         grid-template-columns: repeat(1, 1fr);
     }
+    .feature{
+        flex-direction: column;
+    }
 }
 
 /* Tablet devices */
 @media only screen and (min-width:668px) and (max-width:992px){
     .players{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .feature{
+        flex-direction: column;
     }
 }
