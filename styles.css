@@ -140,10 +140,8 @@ main{
 /* Mobile devices */
 @media only screen and (max-width:688px){
     .players{
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
     }
-    
 }
 
 /* Tablet devices */
@@ -151,5 +149,4 @@ main{
     .players{
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
